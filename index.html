@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real estate calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <form id="investmentForm"> 
+        <input type="number" name="housePrice" placeholder="House price" required>
+        <input type="number" name="downPayment" placeholder="Down payment (%)" required>
+        <input type="number" name="rent" placeholder="Rent a month" required>
+        <input type="number" name="tax" placeholder="Rent tax (%)" required>
+        <input type="number" name="mortgage" placeholder="Mortgage interest (%)" required>
+        <input type="number" name="period" placeholder="Mortgage period (years)" min="1" max="30" required>
+        <input type="button" value="Calculate" onclick="calculateInvestment()"> 
+    </form>
+    <div id="result"></div>
+    <hr>
+    <div id="downPaymentResults"></div>
+    <div id="recommended"></div>
+</body>
+</html>
